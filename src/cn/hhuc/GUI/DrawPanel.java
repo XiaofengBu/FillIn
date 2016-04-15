@@ -213,9 +213,9 @@ public class DrawPanel extends JPanel {
 			//寻找焦点
 			for(Edge edge:intersectionEdges){
 				//求焦点 方法1
-				edge.xNow=edge.x1-edge.dx*(edge.y1-y);
+				//edge.xNow=edge.x1-edge.dx*(edge.y1-y);
 				//方法二
-				//edge.xNow=edge.xNow-edge.dx;
+				edge.xNow=edge.xNow-edge.dx;
 				intersectionPoints.add((int) (edge.xNow+0.5));
 			}
 			//焦点集排序
